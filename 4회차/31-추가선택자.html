@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 더 알아보기</title>
+<style>
+/*
+기호와 함께 사용하는 속성 선택자
+* : 값의 포함 여부
+^ : 값의 시작여부
+$ : 값의 끝 여부
+*/
+img[alt]{
+    border: 5px dashed blue;
+}
+p > em{
+    color: blue;
+}
+/*형제 선택자는 뒤이어 등장하는 형제들을 대상으로 한다*/
+#sam ~ p{
+    color: wheat;
+
+}
+</style>
+</head>
+<body>
+    <img src="images/귀여운고양이.jpeg" width="120" alt="고양이">
+    <img src="images/귀여운고양이.jpeg" width="120">
+    <img src="images/귀여운고양이.jpeg" width="120" id="sam">
+    <p>대전은 유노코딩의 고향이자 현거주지이기도합니다</p>
+    <p>대전광역시 유성구에느 ㄴ대저는 해른ㄷ</p>
+    <p>한빛탑 맞은 편에는 <em>엑스포다리가</em> 놓여 있습니다.</p>
+    <p>엑스포다리 아래에는 대전 3대하천 중 하나인 갑천이 흐릅니다.</p>
+</body>
+</html>

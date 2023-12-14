@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+
+}
+html{
+    background-color: #57575740;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+body{
+    width:640px;
+    margin:auto; /*너비에서 남는 여백을 동일하게 분배*/
+}
+
+h1{
+    font-size: 70px;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    border-radius: 40px;
+}
+
+p{
+    font-size: 1.5rem;
+}

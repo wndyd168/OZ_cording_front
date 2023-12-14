@@ -1,0 +1,19 @@
+*{
+    text-align : center;
+}
+html{
+    background-color: rgb(126, 109, 109);
+    
+}
+body{
+    width: 600px;
+    font-size:18px;
+    margin:auto; /*너비에서 남는 여백을 동일하게 분배*/
+}
+
+img{
+    border-radius: 50%;
+}
+em{
+    color:red;
+}
