@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+section{
+    width:100%;
+    height: 400px;
+    background-color: black;
+    color:white;
+    background-image: url(../OZ_cording_front/4회차/images/귀여운고양이.jpeg) ;
+    background-size: 300px 300px;
+    background-repeat: repeat-x;
+    background-position: bottom;    
+}
+.text{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    top: 330px;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    padding-left: 10px;
+    
+}
+a{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 22px;
+    padding-right: 60px;
+    padding-left: 5px;
+
+    
+}
+.OZ{
+    flex-grow: 40;
+   
+}
+.OZ__1{
+    font-size: 50px;
+    padding-top :13px;
+}
+main{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top:100px;
+}
+p{
+    color: violet;
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    
+}
+h1{
+    margin: 40px;
+    font-size: 70px;
+}
+.point{
+    display: flex;
+    justify-content: space-around;
+}
+.first{
+    border: 3px solid palevioletred;
+    border-radius: 30px;
+    background-color: palevioletred;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+.storm{
+    margin-top: 20px;
+    font-size: 250px;
+}
+.storm__1{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    }
+.text__1{
+    color: white;
+    margin-top: 20px;
+}
+.second{
+    border: 3px solid palevioletred;
+    border-radius: 30px;
+    background-color: palevioletred;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+.program{
+    margin-top: 20px;
+    font-size: 250px;
+}
+.program__1{
+    color: greenyellow;
+    font-size: 30px;
+    font-weight: bold;
+    }
+.text__2{
+    color: white;
+    margin-top: 20px;
+}
+.third{
+    border: 3px solid palevioletred;
+    border-radius: 30px;
+    background-color: palevioletred;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+.Play{
+    margin-top: 20px;
+    font-size: 250px;
+}
+.Play__1{
+    color: greenyellow;
+    font-size: 30px;
+    font-weight: bold;
+    }
+.text__3{
+    color: white;
+    margin-top: 20px;
+}
+.first:hover{
+    
+    transform:scale(1.3)
+}
+.second:hover{
+    
+    transform:scale(1.3)
+}.third:hover{
+    
+    transform:scale(1.3)
+}
