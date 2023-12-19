@@ -1,0 +1,61 @@
+*{
+    padding:0;margin:0
+}
+li{
+    list-style:none
+}
+a{
+    text-decoration:none;
+    font-size:30px
+}
+.nav{
+    background-color: black;
+    
+}
+.menu{
+    
+    display: flex;
+}    
+ 
+.menu > li{
+    width: 150px;
+    float:left;
+    text-align: center;
+    
+    
+}
+a{
+    color:white;
+}
+.home {
+    background-color: green;
+}
+.nav__2{
+    text-align: center;
+    
+}
+.bar__1{
+    display: none;
+    background-color: black;
+}
+.blue{
+    display: none;
+    text-align: center;
+    font-size: 50px;
+}
+li{
+   
+}
+@media screen and (max-width:550px){
+    .blue{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+}
+.blue:hover + .bar__1{
+    
+        display: block;
+    
+}
