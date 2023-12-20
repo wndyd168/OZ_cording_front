@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정보 입력받기</title>
+    <Style>
+        h1{
+            color : blue;
+        }
+    </Style>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p id="age"></p>
+    <script>
+    const nameElement = document.querySelector("#name")
+    let name = prompt("당신의 이름은?")
+    nameElement.textContent = name;
+
+    document.querySelector("#age")
+    .textContent = `제 나이는 ${prompt("당신의 나이는?")}입니다`
+
+        
+    </script>
+</body>
+</html>
