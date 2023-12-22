@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미스테리 숫자 맞추기</title>
+    <link href="미스테리 숫자 맞추기.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="mystery">
+            <h1>Mystery Number 맞추기</h1>
+            <p>1부터 100사이의 숫자를 입력하세요!</p>
+        </div>
+    <div class="dlqfur">
+        <input class="number" type="number">
+        <button onclick="checkNumber()"> 뚜둥!</button>
+        <div id="result"></div>
+        
+    </div>    
+    
+    </div>
+
+
+
+    <script>
+const text = document.getElementById('result')
+const p = document.createElement("p")
+
+
+
+function checkNumber(){
+    const mynumber = 12;
+    const yournumber = document.querySelector('.number').value 
+
+if(yournumber > mynumber ){
+     p.textContent = "힌트 : 숫자가 너무커요.줄이세요"   
+     text.appendChild(p)
+}else if (yournumber < mynumber){
+    p.textContent = "힌트 : 숫자가 너무작아요.키우세요"
+    text.appendChild(p)
+}else{
+    
+    window.alert("정답입니다");
+}
+}
+
+    </script>
+</body>
+</html>

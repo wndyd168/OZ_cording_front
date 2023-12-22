@@ -1,0 +1,38 @@
+
+body{
+    background-color: black;
+}
+.main{
+    text-align: center;
+    
+
+}
+.mystery{
+    color : white;
+}
+p{
+    font-weight: bold;
+}
+.number{
+    width: 150px;
+    height: 25px;
+}
+button{
+    width: 120px;
+    height: 31px;
+    border-color: orange;
+    color: orange;
+    background-color: black;
+    margin-left: 15px;
+}
+button:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 5px 15px  ;
+}
+#result{
+    
+    color : white;
+    
+
+
+}
