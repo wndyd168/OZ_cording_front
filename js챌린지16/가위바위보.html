@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가위바위보게임</title>
+</head>
+<body>
+  <h1>가위, 바위, 보 게임</h1>
+  <label for="userChoice">하나를 고르세요: </label>
+  <select id="userChoice">
+    <option value="rock">바위</option>
+    <option value="paper">보    </option>
+    <option value="scissors">가위</option>
+  </select>
+  <button onclick="playGame()">결과확인</button>
+
+  <h2>결과: <span id="result"></span></h2>
+
+  <script>
+    function playGame() {
+      const userChoiceElement = document.getElementById('userChoice');
+      const userChoice = userChoiceElement.value;
+
+      // 컴퓨터의 선택: 랜덤으로 가위, 바위, 보 중 하나 선택
+      const computerChoices = ['rock', 'paper', 'scissors'];
+      const computerChoice = computerChoices[Math.floor(Math.random() * 3)];
+
+      // 결과 비교
+      let result = '';
+      if (userChoice === computerChoice) {
+        result = "비겼습니다!";
+      } else if (
+        (userChoice === 'rock' && computerChoice === 'scissors') ||
+        (userChoice === 'paper' && computerChoice === 'rock') ||
+        (userChoice === 'scissors' && computerChoice === 'paper')
+      ) {
+        result = '사용자 승!';
+      } else {
+        result = '컴퓨터 승!';
+      }
+
+      // 결과를 화면에 표시
+      document.getElementById('result').innerText = result;
+    }
+  </script>
+
+</body>
+</html>
