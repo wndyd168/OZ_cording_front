@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+    background: skyblue;
+    font-family: sans-serif;
+    font-weight: lighter;
+    height: 100vh;
+}
+
+h1 {
+    position: absolute;
+    padding-bottom: 350px;
+
+}
+
+
+#timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    padding: 20px;
+    width: 700px;
+    color: white;
+}
+
+#timer div {
+    display: inline-block;
+    min-width: 90px;
+    padding: 15px;
+    background: #020518;
+    border-radius: 10px;
+    border: 2px solid #000106;
+    margin: 15px;
+}
+
+#timer div span {
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+    font-size: .35em;
+    font-weight: 400;
+}

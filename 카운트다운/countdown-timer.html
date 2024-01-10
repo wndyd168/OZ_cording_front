@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/oz_icon.png" />
+  <link href="countdown-timer.css" rel="stylesheet">
+  <title>오즈코딩스쿨 | 카운트다운 타이머</title>
+  <style>
+    .footer {
+      font-size: 12px;
+      text-align: center;
+      position: absolute;
+      padding-top: 350px;
+    }
+
+    .footer a {
+      color: hsl(282, 100%, 21%);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>카운트다운 타이머를 만들어봅시다!</h1>
+  <div id="timer"></div>
+
+
+  <div class="footer">
+    © 2023. <a href="https://ozcodingschool.com/" target="_blank">ozcodingschool</a>. All rights
+    reserved. Developed by <a href="#">[이주용]</a>.
+  </div>
+  <script>
+    // JavaScript로 타이머 구현
+    function updateTimer() {
+      const future = Date.parse("2025/01/01 00:00:00");
+      const now = new Date();
+      const diff = future - now;
+
+      const days = Math.floor(diff / (24 * 60 * 60 * 1000));
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      const mins = Math.floor(diff / (1000 * 60));
+      const secs = Math.floor(diff / 1000);
+
+      const d = days;
+      const h = hours - days * 24;
+      const m = mins - hours * 60;
+      const s = secs - mins * 60;
+      document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>일</span></div>' +
+        '<div>' + h + '<span>시간</span></div>' +
+        '<div>' + m + '<span>분</span></div>' +
+        '<div>' + s + '<span>초</span></div>';
+    }
+
+    setInterval(updateTimer, 1000);
+
+  </script>
+</body>
+
+</html>
